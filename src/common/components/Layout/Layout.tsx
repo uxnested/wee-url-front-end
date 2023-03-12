@@ -32,14 +32,6 @@ const ListItem = ({ children }: { children: React.ReactNode }) => (
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
@@ -48,12 +40,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <nav className=" sticky -top-1 z-1500 h-[80px] bg-white dark:bg-[#121212] sm:mx-[0px] md:mx-[30px] md:px-4 xl:mt-[30px]">
           <div className="justify-between xl:flex xl:items-center xl:justify-center">
             <div className="flex w-full items-center justify-between ">
-              <a href="#" className="dark:hidden">
+              <button className="dark:hidden">
                 <LogoSvg />
-              </a>
-              <a href="#" className="invisible dark:visible">
+              </button>
+              <button className="invisible dark:visible">
                 <DarkThemeLogo />
-              </a>
+              </button>
               <div className="flex items-center justify-center">
                 <div className="lg:hidden">
                   <button
