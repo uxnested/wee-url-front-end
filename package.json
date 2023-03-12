@@ -1,17 +1,17 @@
 {
-  "name":"WeeUrl",
-    "version": "1.0.2",
-    "description": "Reliable Development Service At Scale",
-    "keywords": [
-        "typescript",
-        "react",
-        "next",
-        "eslint",
-        "prettier",
-        "jest",
-        "google",
-        "google-analytics"
-    ],
+  "name": "WeeUrl",
+  "version": "1.0.2",
+  "description": "Reliable Development Service At Scale",
+  "keywords": [
+    "typescript",
+    "react",
+    "next",
+    "eslint",
+    "prettier",
+    "jest",
+    "google",
+    "google-analytics"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
