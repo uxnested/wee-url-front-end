@@ -11,7 +11,7 @@ import NavMenuOpenIcon from "src/utils/svgs/NavMenuOpenIcon";
 import Footer from "./footer/Footer";
 import DarkThemeLogo from "src/utils/svgs/DarkThemeLogo";
 
-const dropDownClassNames = [
+const dropdownStyles = [
   "absolute",
   "flex flex-col justify-center items-start sm:pl-[46px] xs:pl-[36px]",
   "top-20 shadow-lg shadow-gray-300 dark:shadow-md dark:shadow-black",
@@ -66,7 +66,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <ul
                   className={cx(
                     {
-                      [dropDownClassNames.join(" ")]: navMenuOpen,
+                      [dropdownStyles.join(" ")]: navMenuOpen,
                       hidden: !navMenuOpen,
                     },
                     "justify-start text-base font-medium lg:static lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:bg-transparent lg:shadow-none dark:lg:bg-transparent dark:lg:shadow-none"
