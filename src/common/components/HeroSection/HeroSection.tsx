@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import HeroImage from "../../../../public/Image/1200.png";
+import HeroImage from "../../../../public/Image/heroImage.png";
 
 function HeroSection() {
   return (
     <>
-      <div className="mt-[70px] flex">
-        <div className="flex lg:flex-col">
+      <div className="mt-[70px] flex  lg:justify-center lg:justify-between lg:text-start">
+        <div className="mt-[70px] flex text-start lg:flex-col">
           <h1 className="text-[#171717] lg:text-[52px] lg:font-bold lg:leading-[70px]">
             Shorten links <br /> Using WeeURL{" "}
           </h1>
@@ -15,7 +15,7 @@ function HeroSection() {
             With WeeUrl, you can automate your work and have more time for what
             matters most - no code required!
           </p>
-          <div className="flex">
+          <div className="mt-[18px] flex">
             <li className="flex h-[48px] w-[150px] items-center justify-center rounded bg-[#1E3ED5] ">
               <Link
                 href="#SignUp"
@@ -29,8 +29,12 @@ function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="w-[50%]">
-          <Image src={HeroImage} alt="Hero Image " />
+        <div className="lg:h-[621px] lg:w-[645px]">
+          <Image
+            src={HeroImage}
+            alt="Hero Image "
+            className="lg:h-[621px] lg:w-[645px]"
+          />
         </div>
       </div>
     </>
