@@ -6,7 +6,7 @@ import HeroImage from "../../../../public/Image/heroImage.png";
 function HeroSection() {
   return (
     <>
-      <div className="mt-[70px] flex  lg:justify-center lg:justify-between lg:text-start">
+      <div className="mt-[70px] flex  lg:mx-[54px] lg:justify-center lg:justify-between lg:text-start">
         <div className="mt-[70px] flex text-start lg:flex-col">
           <h1 className="text-[#171717] lg:text-[52px] lg:font-bold lg:leading-[70px]">
             Shorten links <br /> Using WeeURL{" "}

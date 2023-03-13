@@ -44,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <div className="xl:max-w-8xl mt-[20px] max-w-full xs:px-3 sm:px-5 md:px-2">
+      <div className="xl:max-w-8xl mt-[20px] max-w-full xs:px-3 sm:px-5 md:px-0">
         <nav className=" sticky -top-1 z-1500 h-[80px] bg-white dark:bg-[#121212] sm:mx-[0px] md:mx-[30px] md:px-4 xl:mt-[30px]">
           <div className="justify-between xl:flex xl:items-center xl:justify-center">
             <div className="flex w-full items-center justify-between ">
