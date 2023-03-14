@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import transform from "/public/Image/transformlengthyurl.png";
 import BrandedUrls from "./BrandedUrls/BrandedUrls";
+import TrackEveryClick from "./TrackEveryClick/TrackEveryClick";
 
 export const HowItWorks = () => {
   return (
@@ -42,6 +43,8 @@ export const HowItWorks = () => {
       </div>
       {/* Into Short Branded Urls */}
       <BrandedUrls />
+      {/* Track Every Click */}
+      <TrackEveryClick />
     </>
   );
 };
