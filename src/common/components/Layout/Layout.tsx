@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect,useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import LogoSvg from "src/utils/svgs/LogoSvg";
@@ -63,24 +62,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     },
                     "justify-start text-base font-medium lg:static lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:bg-transparent lg:shadow-none dark:lg:bg-transparent dark:lg:shadow-none"
                   )}
-                >
-                  <ListItem>
-                    <Link href="#HowItWorks" className="">
+                ><ListItem>
+                    <Link href="#HowItWorks" >
                       How it works
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#WhyUs" className="">
+                    <Link href="#WhyUs">
                       Why us
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#PricingPlans" className="">
+                    <Link href="#PricingPlans">
                       Pricing plans
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#chooseUs" className="">
+                    <Link href="#chooseUs">
                       FAQ’s
                     </Link>
                   </ListItem>
