@@ -1,3 +1,4 @@
+import { Faq } from "@components/faq/Faq";
 import HeroSection from "@components/HeroSection/HeroSection";
 import { HowItWorks } from "@components/HowItWorks/HowItWorks";
 import PricingPlans from "@components/PricingPlans/PricingPlans";
@@ -13,6 +14,7 @@ export default function Home() {
           <HowItWorks />
           <WhyUs />
           <PricingPlans />
+          <Faq />
         </Fragment>
       </div>
     </>
