@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+ "baseUrl": ".",
+   "paths": {
+     "@components/*": ["src/common/components/*"],
+     "@styles/*": ["src/common/styles/*"],
+      "@modules/*": ["src/modules/*"],
+     "@content/*": ["src/content/*"]
+  },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,6 +22,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "spaghetti.js"],
   "exclude": ["node_modules"]
 }
