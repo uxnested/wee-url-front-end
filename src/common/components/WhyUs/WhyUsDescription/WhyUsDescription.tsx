@@ -72,11 +72,11 @@ const description: DescriptionItemProps[] = [
 const WhyUsDescription = () => {
   return (
     <>
-      <div className="flex items-center justify-center ">
+      <div className="flex w-full items-center justify-center lg:mx-[54px]">
         <div className="grid items-center gap-[25px] focus:text-[#1E3ED5] lg:grid-cols-6">
           {description?.map((item, index) => (
             <div
-              className="flex h-[206px] w-[180px] max-w-sm flex-col items-center rounded-sm border-2 border-[#171717] bg-white shadow hover:border-[#1E3ED5] hover:text-[#1E3ED5] focus:text-[#1E3ED5] dark:border-gray-700 dark:bg-gray-800"
+              className="flex h-[206px] w-[189px] max-w-sm flex-col items-center rounded-sm border-2 border-[#171717] bg-white shadow hover:border-[#1E3ED5] hover:text-[#1E3ED5] focus:text-[#1E3ED5] dark:border-gray-700 dark:bg-gray-800"
               key={item.id}
             >
               <a
