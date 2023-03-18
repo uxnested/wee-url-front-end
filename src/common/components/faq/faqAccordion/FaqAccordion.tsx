@@ -1,5 +1,7 @@
 import { faqContentDescription } from "@content/faqContentDescription/FaqContentDescription";
 import React, { useState } from "react";
+import Addition from "src/utils/svgs/Link/Addition";
+import Subtraction from "src/utils/svgs/Link/Subtraction";
 
 type FaqItem = {
   id: number;
@@ -13,32 +15,20 @@ const FaqAccordion = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <div>
+    <div className="lg:w-full">
       {faqContentDescription.map((faq: FaqItem, index: number) => (
         <div key={faq.id}>
           <button
-            className="flex w-full justify-between rounded-md bg-white p-4 text-left font-medium hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+            className="flex w-full items-center justify-between rounded-md bg-[#F6F6F6] px-[26px] text-left text-[#171717] hover:bg-gray-100 focus:bg-gray-100 focus:outline-none lg:h-[67px] lg:text-[22px] lg:font-normal lg:leading-[30px]"
             onClick={() => handleAccordionClick(index)}
           >
             <span>{faq.title}</span>
-            <svg
-              className={`h-5 w-5 transition-transform duration-300 ${
-                activeIndex === index ? "rotate-180 transform" : ""
-              }`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 6.707a1 1 0 0 1 0 1.414L2.414 12a1 1 0 1 1-1.414-1.414l4.853-4.853a1 1 0 0 1 1.414 0zM17.707 12a1 1 0 0 1 0 1.414l-4.853 4.853a1 1 0 0 1-1.414-1.414L15.586 12a1 1 0 0 1 1.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
+            {activeIndex === index ? <Subtraction /> : <Addition />}
           </button>
           <div
             className={`${
               activeIndex === index ? "block" : "hidden"
-            } rounded-b-md bg-white p-4`}
+            } rounded-b-md bg-white text-[#171717] lg:px-[26px] lg:py-[21px] lg:text-lg lg:font-normal lg:leading-[30px]`}
           >
             <p className="text-gray-700">{faq.description}</p>
           </div>

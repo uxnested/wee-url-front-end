@@ -4,7 +4,7 @@ import FaqAccordion from "../faqAccordion/FaqAccordion";
 const FaqDescription = () => {
   return (
     <>
-      <div className="flex w-full items-center justify-center lg:mx-[54px]">
+      <div className="flex items-center justify-center lg:mx-[54px] lg:w-[846px]">
         <FaqAccordion />
       </div>
     </>
