@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect,useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import LogoSvg from "src/utils/svgs/LogoSvg";
@@ -32,14 +31,6 @@ const ListItem = ({ children }: { children: React.ReactNode }) => (
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
@@ -48,12 +39,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <nav className=" sticky -top-1 z-1500 h-[80px] bg-white dark:bg-[#121212] sm:mx-[0px] md:mx-[30px] md:px-4 xl:mt-[30px]">
           <div className="justify-between xl:flex xl:items-center xl:justify-center">
             <div className="flex w-full items-center justify-between ">
-              <a href="#" className="dark:hidden">
+              <button className="dark:hidden">
                 <LogoSvg />
-              </a>
-              <a href="#" className="invisible dark:visible">
+              </button>
+              <button className="invisible dark:visible">
                 <DarkThemeLogo />
-              </a>
+              </button>
               <div className="flex items-center justify-center">
                 <div className="lg:hidden">
                   <button
@@ -71,24 +62,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     },
                     "justify-start text-base font-medium lg:static lg:flex lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:bg-transparent lg:shadow-none dark:lg:bg-transparent dark:lg:shadow-none"
                   )}
-                >
-                  <ListItem>
-                    <Link href="#HowItWorks" className="">
+                ><ListItem>
+                    <Link href="#HowItWorks" >
                       How it works
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#WhyUs" className="">
+                    <Link href="#WhyUs">
                       Why us
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#PricingPlans" className="">
+                    <Link href="#PricingPlans">
                       Pricing plans
                     </Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="#chooseUs" className="">
+                    <Link href="#chooseUs">
                       FAQ’s
                     </Link>
                   </ListItem>

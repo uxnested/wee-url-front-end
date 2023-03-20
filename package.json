@@ -1,22 +1,23 @@
 {
-  "name": "WeeUrl",
-  "version": "1.0.2",
-  "description": "Reliable Development Service At Scale",
-  "keywords": [
-    "typescript",
-    "react",
-    "next",
-    "eslint",
-    "prettier",
-    "jest",
-    "google",
-    "google-analytics"
-  ],
+  "name":"wee-url",
+    "version": "1.0.2",
+    "description": "Reliable Development Service At Scale",
+    "keywords": [
+        "typescript",
+        "react",
+        "next",
+        "eslint",
+        "prettier",
+        "jest",
+        "google",
+        "google-analytics"
+    ],
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": " next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -32,9 +33,6 @@
     "next-images": "^1.8.4",
     "next-seo": "^5.14.1",
     "next-themes": "^0.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-github-btn": "^1.4.0",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
