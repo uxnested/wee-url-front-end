@@ -22,6 +22,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "spaghetti.js", "src/common/components/Layout/Header/Header.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "spaghetti.js"],
   "exclude": ["node_modules"]
 }
