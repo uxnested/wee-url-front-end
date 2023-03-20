@@ -3,12 +3,23 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="h-[1px] w-full bg-[#E0E0E0]"></div>
-      <div className=" dark:bg-[#000000]">
-        <div className="flex items-center bg-[#ffffff] px-4 dark:border-gray-700 dark:bg-[#000000] xs:flex-col sm:flex-col md:mx-[30px] md:flex-row  md:justify-center md:py-[12px] lg:items-center ">
-          <p className="text-base leading-6 text-[#000000] dark:text-white xs:text-[10px] xs:leading-5 sm:text-xs sm:leading-5">
-            NestGo@2023 All rights reserved
-          </p>
+      <div className="flex border-t-[1px] border-[#171717] border-opacity-10 lg:mx-[54px] lg:mt-[100px] lg:h-[40px] lg:items-center lg:justify-between">
+        <p className="text-base font-normal leading-[26px] text-[#1E1E1E]">
+          Nestgo@2022 All rights reserved
+        </p>
+        <div className="flex">
+          <a
+            href="#"
+            className="text-base font-normal leading-[26px] text-[#1E1E1E] lg:mr-[16px]"
+          >
+            Terms & Conditions
+          </a>
+          <a
+            href="#"
+            className="text-base font-normal leading-[26px] text-[#1E1E1E]"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </>
