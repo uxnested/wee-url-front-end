@@ -1,7 +1,22 @@
+import { Faq } from "@components/faq/Faq";
+import HeroSection from "@components/HeroSection/HeroSection";
+import { HowItWorks } from "@components/HowItWorks/HowItWorks";
+import PricingPlans from "@components/PricingPlans/PricingPlans";
+import WhyUs from "@components/WhyUs/WhyUs";
+import { Fragment } from "react";
+
 export default function Home() {
   return (
-    <div className=" overflow-hidden xs:px-[15px] md:mx-[30px]">
-      <p className="text-purple-600">This is Home page </p>
-    </div>
+    <>
+      <div className=" overflow-hidden px-0">
+        <Fragment>
+          <HeroSection />
+          <HowItWorks />
+          <WhyUs />
+          <PricingPlans />
+          <Faq />
+        </Fragment>
+      </div>
+    </>
   );
 }

@@ -5,6 +5,20 @@ module.exports = {
     "./src/common/components/**/*.{js,ts,jsx,tsx}",
     "./src/common/components/elements/**/*.{js,ts,jsx,tsx}",
   ],
+  webpackDevMiddleware: (config) => {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    };
+
+    return config;
+  },
+  devIndicators: {
+    autoPrerender: false,
+  },
+  experimental: {
+    reactRefresh: false,
+  },
   darkMode: "class",
   theme: {
     screens: {
@@ -159,5 +173,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwindcss-radix")()],
+  plugins: [require("@tailwindcss/forms")()],
 };
