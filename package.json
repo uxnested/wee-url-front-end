@@ -13,11 +13,24 @@
         "google-analytics"
     ],
   "private": true,
+      "homepage": "https://github.com/uxnested/wee-url-front-end",
+    "bugs": {
+        "url": "https://github.com/uxnested/wee-url-front-end/issue"
+    },
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uxnested/wee-url-front-end"
+    },
   "scripts": {
     "dev": "next dev",
     "build": " next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -47,6 +60,8 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.2.4",
-    "typescript": "^4.8.4"
-  }
+    "typescript": "^4.8.4",
+     "turbo": "^1.8.3"
+  },
+  "packageManager": "pnpm@7.15.0"
 }
